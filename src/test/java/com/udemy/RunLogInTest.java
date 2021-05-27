@@ -8,6 +8,6 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"pretty"},
         features = "src/test/resources/com/udemy/logowanie.feature",
-        glue = "LogowanieSteps")
+        glue = "src/test/java/com/udemy/LogowanieSteps")
 public class RunLogInTest {
 }

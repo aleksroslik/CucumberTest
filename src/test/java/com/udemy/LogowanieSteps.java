@@ -50,6 +50,7 @@ public class LogowanieSteps {
 
     @When("^Użytkownik wprowadza nazwe uzytkownika \"([^\"]*)\" i haslo \"([^\"]*)\"$")
     public void uzytkownikWprowadzaNazweUzytkownikaIHaslo(String login, String haslo) {
+        System.out.println("Uzytkownik podaje login i haslo " + login + " " + haslo);
         this.username = login;
         this.password = haslo;
         logowanie.logIn(login,haslo);
